@@ -1,0 +1,16 @@
+<template>
+    <lightning-card  title="Hello Component">
+            <div class="slds-m-around_medium">
+                <p>Hello</p>
+                <lightning-input type="text"  value={message} icon-name="standard:lightning_component" label="Draft Message:" onchange={handleChange} placeholder="Type here and as youtype you can see the preview below."></lightning-input>
+                
+                <hr>
+                <div>
+                    <p class="background-grey">Preview:</p>
+                    <p>{message}</p>
+                </div>
+               
+            </div>
+        </lightning-card>   
+
+</template>
